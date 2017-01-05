@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TabDemo</title>
+</head>
+<body>
+<style type="text/css">
+
+/*a 是内联元素，所以设置高宽无效*/
+
+
+/*a{
+	display:block;
+	width: 100px;
+	height: 200px;
+}*/
+
+
+.foot_4tab
+{
+	/*display: box;*/
+	/*display: -webkit-box;*/
+	display: flex;
+/*	left: 0;
+	right: 0;
+	bottom: 0;*/
+	background-color: red;
+}
+
+.foot_item
+{
+	/*
+	text-align: center;
+	height:50px;
+	-webkit-box-flex:1;
+	display: block;*/
+	/*box-flex:1;*/
+
+	/*-webkit-box-flex: 1;*/
+	/*display: block;*/
+	margin: 0 auto;
+	height: 50px;
+/*
+	color: #666;
+	font-size: 16px;
+	-webkit-box-flex: 1;
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
+	display: block;
+	text-decoration: none;
+	margin: 0 auto;*/
+}
+
+.tab_icon_shouye
+{
+	background-image: url(https://www.dpfile.com/app/app-m-module/static/js/719613642ac599c84ae1be76256ebcf1.png);
+	background-position: 0 -102px;
+	background-size: 200px;
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 31px;
+	margin: 0 auto;
+}
+
+
+.foot_4tab .foot_item .tab_icon
+{
+    vertical-align: middle;
+    width: 28px;
+    height: 31px;
+    margin: 0 auto
+    background-repeat: no-repeat;
+    background-size: 200px;
+
+}
+
+.foot_4tab .foot_item .tab_icon.waimai
+{
+    background-image: url(https://www.dpfile.com/app/app-m-module/static/js/719613642ac599c84ae1be76256ebcf1.png);
+    background-position: 0 -245px;
+    background-size: 200px
+}
+
+
+</style>
+
+
+
+<a href="" style="margin: 0 auto;">344</a>
+
+<div class="foot_4tab">
+	<a class="foot_item" href="https//m.dianping.com?tab2waimai=1&utm_source=card">
+		<div class="tab_icon_shouye">
+			
+		</div>
+		<div >
+		首页
+		</div>
+	</a>
+
+	<a class="foot_item" href="//m.dianping.com?tab2waimai=1&utm_source=card">
+		<div class="tab_icon waimai">
+			
+		</div>
+		<div >
+		美食
+		</div>
+	</a>
+
+	<a class="foot_item"  class="" href="//m.dianping.com?tab2waimai=1&utm_source=card">
+		<div class="tab_icon waimai">
+			
+		</div>
+		<div >
+		外卖
+		</div>
+	</a>
+</div>
+	
+</body>
+</html>

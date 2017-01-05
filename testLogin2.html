@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		#headerBlock
+		{
+			/*display: -webkit-flex;*/
+			display: flex;
+			font-size: 25px;
+
+			/*align-items: center;*/
+			
+		}
+		#redBlock
+		{
+			text-align: center;
+			background-color: red;				
+			/*width: 200px;*/
+			width: 50%;
+			margin-left: 50%;
+			margin-top:20px;
+		}
+		#loginBtn
+		{
+			
+			margin-left: 40%;
+			margin-right: 40%;
+		}
+	</style>
+</head>
+<body>
+	<div id="headerBlock">
+	<div id="redBlock">
+		123
+	</div>
+	<div>3243</div>
+	</div>
+	<div>
+		second row
+	</div>
+	登录注册
+	<input id ="loginBtn" type="date" name="date" />
+	<div id="loginBtn">
+
+		<button onclick="login()">
+			登录
+		</button>
+	</div>
+
+<script type="text/javascript">
+	function login()
+	{
+		console.log("test");
+		//Document.getElementBy("redBlock").background-color ="redColor";
+		//Document.getElementBy("redBlock").style = ""
+		alert("haha");
+	}
+
+</script>
+
+</body>
+</html>
