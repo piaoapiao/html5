@@ -26,6 +26,10 @@
 	right: 0;
 	bottom: 0;*/
 	background-color: red;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .foot_item
@@ -83,12 +87,46 @@
     background-size: 200px
 }
 
+.foot_4tab .foot_item .tab_icon.meishi
+{
+    background-image: url(https://www.dpfile.com/app/app-m-module/static/js/719613642ac599c84ae1be76256ebcf1.png);
+    /*background-position: -42px -188px;*/
+    background-position: 0px -245px;
+    background-size: 190px
+}
+
+li
+{
+
+	height: 200px;
+}
+
 
 </style>
 
+<div id="content" data-user-list="user_list23">data-user_list自定义属性 </div>
 
 
-<a href="" style="margin: 0 auto;">344</a>
+<ul>
+	<li>
+		123
+	</li>
+	<li>
+		123
+	</li>
+	<li>
+		123
+	</li>
+		<li>
+		123
+	</li>
+	<li>
+		123
+	</li>
+	<li>
+		123
+	</li>			
+</ul>
 
 <div class="foot_4tab">
 	<a class="foot_item" href="https//m.dianping.com?tab2waimai=1&utm_source=card">
@@ -101,7 +139,7 @@
 	</a>
 
 	<a class="foot_item" href="//m.dianping.com?tab2waimai=1&utm_source=card">
-		<div class="tab_icon waimai">
+		<div class="tab_icon meishi">
 			
 		</div>
 		<div >
@@ -118,6 +156,49 @@
 		</div>
 	</a>
 </div>
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<script type="text/javascript" >
+function test()
+{
+	// var content= document.getElementById('content');
+	// alert(content.dataset.userList)
 	
+
+	// jquery
+	var userList = $('#content').data('userList');//读
+	alert(userList);
+}
+
+test();
+</script>>
+
+
+
+<!-- var content= document.getElementById('content');
+content.dataset.name='我叫tom'
+alert(content.dataset.name)
+ -->
 </body>
 </html>
+
+
+<!-- 其实要使多浏览器兼容flexbox容器样式，可以使用如下CSS样式进行定义：
+.flex-container {
+  display: -moz-box;  /* Firefox */ 
+  display: -ms-flexbox;    /* IE10 */ 
+  display: -webkit-box;    /* Safari */  
+  display: -webkit-flex;    /* Chrome, WebKit */ 
+  display: box;  
+  display: flexbox;  
+  display: flex;   
+  width: 100%;  
+  height: 100%;  
+  background-color: gray;
+}
+
+作者：郭爽
+链接：https://www.zhihu.com/question/22991944/answer/63604478
+来源：知乎
+著作权归作者所有，转载请联系作者获得授权。 -->
