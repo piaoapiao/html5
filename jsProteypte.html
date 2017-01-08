@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<script type="text/javascript">
+
+	// //Animal = 
+	// var a = 
+	// {
+	// 	type:"动物",
+	// 	run: function (){
+	// 		alert("animal run")
+	// 	}
+	// };
+	//  a.run();
+
+
+
+
+	 // function Animal()
+	 // {
+	 // 	this.name = "动物";
+
+	 // 	this.run = function ()
+	 // 	{
+	 // 		alert("Animal run");
+	 // 	}
+	 // }
+
+	 // var aml = new Animal();
+
+	 // aml.run();
+
+
+
+
+	 // function Dog(leg)
+	 // {
+									 
+	 // 	this.legs = leg;
+
+	 // 	this.bark = function (){     
+	 // 		alert("dog bark");
+	 // 	};
+	 // }
+
+
+	 // function Dog(leg)
+	 // {
+
+	 // 	Animal.apply(this,arguments);   //绑定继承
+
+	 // 	this.legs = leg;
+
+	 // 	this.bark = function (){
+	 // 		alert("dog bark");
+	 // 	};
+	 // }
+
+	 // 	var g = new Dog(6);
+	 // 	g.bark();	 
+	 // 	g.run();
+
+
+	 // Dog.prototype = new Animal();     //prototype 继承
+	 // Dog.prototype.constructor = Dog;
+
+	 // var g = new Dog(6);
+	 // g.bark();	 
+	 // g.run();
+	 // alert(g.name)
+
+
+
+	 function Animal()
+	 {
+	 	this.run = function ()
+	 	{
+	 		alert("Animal run");
+	 	}
+	 }	 
+
+	 Animal.prototype.name = "动物";    //在外面改变 prototype  属性。方法
+
+	 Animal.prototype.show = function () 
+	 {
+	 	alert("animal show");
+	 };
+
+	 function Dog(leg)
+	 {
+									 
+	 	this.legs = leg;
+
+	 	this.bark = function (){     
+	 		alert("dog bark");
+	 	};
+	 }
+
+	 // Dog.prototype = Animal.prototype;   // 直接 prototype 继承
+	 // Dog.prototype.constructor = Dog;
+
+	Dog.prototype.protect = function () 
+	 {
+	 	alert("protect home");
+	 };
+
+
+
+	 // var F = function (){};
+	 // F.prototype = Animal.prototype;   
+	 // Dog.prototype = new F();
+	 // Dog.prototype.constructor = Dog;
+
+
+	 // function extend2(Child,Parent){   //赋值方法
+	 // 	var p = Parent.prototype;
+	 // 	var c = Child.prototype;
+	 // 	for(var i in p){
+	 // 		c[i] = p[i];
+	 // 	}
+	 // };
+
+	//  extend2(Dog,Animal);	 
+
+
+	// var g = new Dog(6);
+
+	// alert(g.name);
+
+	// g.bark();
+
+	// g.show();
+
+
+    (function (){
+    	alert("call self");
+    })();       //调用自己
+
+
+
+	 	// var F = function (){};
+	 	// F.prototype = Animal.prototype;
+	 	// Dog.prototype = new F();
+	  //  Dog.prototype.constructor = Dog;
+
+	 //   var g = new Dog(6);
+	 //   g.bark();	 
+	 // // g.run();
+	 // // 
+
+	 // alert(g.name);
+
+	 // function extend2(Child,Parent){
+	 // 	var p = Parent.prototype;
+	 // 	var c = Child.prototype;
+	 // 	for(var i in p){
+	 // 		c[i] = p[i];
+	 // 	}
+	 // };
+
+	 // extend2(Dog,Animal);
+
+	 //  var g = new Dog(6);
+	 //  g.bark();	 
+	  
+	 //  alert("here");
+	 //   g.run();
+	 //  alert(g.legs);
+
+
+</script>
+
+</head>
+<body>
+
+werwer
+
+	
+</body>
+</html>
